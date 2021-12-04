@@ -18,7 +18,7 @@ This is an example of how to list things you need to use the software and how to
 * Make your own folder
   ```sh
   mkdir $HOME/bin
-  mv shmake NAME
+  mv shmake $HOME/bin
   nano ~/.bashrc
   # ADD THE LINE BELOW INTO YOUR BASHRC FILE
   export PATH=$HOME/bin:$PATH
