@@ -10,7 +10,7 @@ Out of my laziness came shmake, shamke basically just means shell maker.
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Download the file and add it to a file in your distro, you can either move this file to your bin folder or make a new folder and add that to your path.
+Download the file and add it to a folder in your distro, you can either move this file to your bin folder or make a new folder and add that to your path.
 
 ### Guide
 
