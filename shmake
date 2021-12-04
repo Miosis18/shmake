@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Author: Elliot
+# Date Created: 11/11/21
+# Date Modified: 11/11/21
+
+# Description
+# This is a script that creates all the nessacary comments without the need
+# for me to type them in manually.
+
+# Usage
+# shmake FILENAME [DESCRIPTION]
+
+new_shell="${1}.sh"
+
+if [[ -f $new_shell  ]]; then
+
+    echo "Unable to create shell as this file already exists."
+    exit 1
+
+else
+    
+    touch $new_shell
+
+    echo "#!/bin/bash" > $new_shell 
+    echo "" >> $new_shell
+    echo "# Author: YOUR NAME HERE" >> $new_shell
+    echo "# Date Created: $(date +%d/%m/%y)" >> $new_shell
+    echo "# Date Modified: $(date +%d/%m/%y)" >> $new_shell
+    echo "" >> $new_shell
+    echo "# Description" >> $new_shell
+    echo "# Enter Description Here" >> $new_shell
+    echo "" >> $new_shell
+    echo "# Usage" >> $new_shell
+    echo "# $1" >> $new_shell
+    echo "" >> $new_shell
+    echo "exit 0" >> $new_shell
+
+    echo "${new_shell} has been created in $(pwd) :)"
+    chmod 744 $new_shell
+fi
+
+exit 0
